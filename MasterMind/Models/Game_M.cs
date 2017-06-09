@@ -50,6 +50,7 @@ namespace MasterMind.Models
         {  
             //Console.Write("Wie viele Zahlen wollen Sie benutzen ( 4- 10 ) ? ");
             int input = 5;
+
             //if(input < 4 || input > 10) {
             //    Console.Write(" Bitte wählen Sie eine Anzahl zwischen 4 und 10! ");
             //}
