@@ -23,6 +23,9 @@ namespace MasterMind.Models
         }        
 
         private int randomNumberCount;
+
+        
+
         public int RandomNumberCount
         {
             get { return randomNumberCount; }
@@ -41,6 +44,18 @@ namespace MasterMind.Models
         {
             get { return countHits; }
             set { countHits = value; }
+        }
+
+        public int GetRandomNumberCount()
+        {  
+            //Console.Write("Wie viele Zahlen wollen Sie benutzen ( 4- 10 ) ? ");
+            int input = 5;
+            //if(input < 4 || input > 10) {
+            //    Console.Write(" Bitte wählen Sie eine Anzahl zwischen 4 und 10! ");
+            //}
+            //Console.Write("Die gewünschte Anzahl ist " + input);
+            RandomNumberCount = input;
+            return RandomNumberCount;
         }
 
         public int[] GenerateRandomNumber(int PCSize)

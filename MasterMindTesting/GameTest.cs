@@ -14,5 +14,15 @@ namespace MasterMindTesting
             game.GenerateRandomNumber(5);
             Assert.IsNotNull(game.RandomNumber);           
         }
+
+        [TestMethod]
+        public void GetRandomNumberCountTest()
+        {
+            Game_M game = new Game_M();
+            game.GetRandomNumberCount();
+            Assert.AreEqual(5, game.RandomNumberCount);
+        }
+
+
     }
 }
