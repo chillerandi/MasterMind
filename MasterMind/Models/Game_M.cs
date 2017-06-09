@@ -43,9 +43,19 @@ namespace MasterMind.Models
             set { countHits = value; }
         }
 
-        public void GenerateRandomNumber()
+        public int[] GenerateRandomNumber(int PCSize)
         {
-            throw new NotImplementedException();
+            int singleNumber;
+            int[] randomNumber = new int[PCSize];
+            Random rnd = new Random();
+            Console.Write("PC Number : ");
+            for (int i = 0; i < PCSize; i++) {
+                singleNumber = rnd.Next(1, 9);
+                randomNumber[i] = singleNumber;
+                Console.Write(singleNumber);
+            }
+            Console.WriteLine();
+            return randomNumber;
         }
     }
 }
